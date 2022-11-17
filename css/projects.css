@@ -5,3 +5,23 @@ body{
 .nav_projects{
     border: 2px solid white;
 }
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gallery img{
+    border: 3px solid white;
+    width: 22.5%;
+}
+
+.gallery img:first-child{
+    border: none;
+}
