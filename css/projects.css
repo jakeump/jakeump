@@ -24,4 +24,5 @@ body{
 
 .gallery img:first-child{
     border: none;
+    align-self: center;
 }
