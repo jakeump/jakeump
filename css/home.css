@@ -1,0 +1,7 @@
+body{
+    background: url("../images/materialplanet.png") 0 0 / 175vmax 175vmax;
+}
+
+.nav_home{
+    border: 2px solid white;
+}

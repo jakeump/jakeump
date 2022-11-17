@@ -1,0 +1,93 @@
+header{
+    border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2em;
+}
+
+.nav_links{
+    justify-content: space-between;
+}
+
+.nav_home, .nav_about, .nav_projects{
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav_home a, .nav_about a, .nav_projects a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav_home a:link, .nav_about a:link, .nav_projects a:link,
+.nav_home a:visited, .nav_about a:visited, .nav_projects a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.nav_home a:hover, .nav_home a:focus, .nav_about a:hover, 
+.nav_about a:focus, .nav_projects a:hover, .nav_projects a:focus{
+    text-decoration: underline;
+}
+
+body{
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    height: 40px; 
+    line-height: 40px;
+    background: black; 
+    color: white;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+h1{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    line-height: 200%;
+}
+
+h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    line-height: 32px;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+  
+a.skip:focus{
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+/*prefers reduced motion for skip to main content -- is this needed?*/
