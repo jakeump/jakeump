@@ -1,5 +1,5 @@
 body{
-    background: black;
+    background: url("../images/starry.jpeg") 0 0 / 175vmax 175vmax;
 }
 
 .nav_projects{
