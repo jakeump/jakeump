@@ -10,8 +10,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: auto;
     justify-content: space-evenly;
 }
 

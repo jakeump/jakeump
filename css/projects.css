@@ -5,6 +5,51 @@ body{
 .nav_projects{
     border: 2px solid white;
 }
+
+.timeline{
+    display: block;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    justify-self: center;
+}
+
+.blocklifts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+.blocklifts > img{
+    border: 3px solid white;
+    width: 100%;
+}
+
+.item1{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.item1 img{
+    padding-top: 20px;
+    width: 15%;
+}
+
+.item2{
+    padding-top: 25px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#slider{
+    grid-column: 1 / -1;
+    width: 25%;
+    padding-left: 37.5%;
+    padding-right: 37.5%;
+}
+
 /* probably wanna use grid here so I can have captions and such*/
 .gallery{
     display: flex;
