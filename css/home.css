@@ -5,3 +5,18 @@ body{
 .nav_home{
     border: 2px solid white;
 }
+
+.contact_list{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: space-evenly;
+}
+
+.contact_list img{
+    height: 10vmin;
+}
+
+/*prefers reduced motion turn off animation*/

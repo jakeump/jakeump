@@ -5,7 +5,7 @@ body{
 .nav_projects{
     border: 2px solid white;
 }
-
+/* probably wanna use grid here so I can have captions and such*/
 .gallery{
     display: flex;
     flex-direction: row;

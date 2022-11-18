@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/home.css">
@@ -22,17 +23,40 @@
             </nav>
         </header>
         <main id="skip">
-            <h1>Jake Block</h1>	
-            <h2>I am a<br>
-                student at the University of Michigan<br><br>
-                Studying<br>
-                Computer Science<br><br>
-                Working at<br>
-                Uber
+            <h1>Jake Block</h1>
+            <h2>I am<br>
+                <span id="js-rotating1">a software developer, an innovator, a problem-solver, a teammate</span>.<br><br>
+                Interested in<br>
+                <span id="js-rotating2">internet of things, cybersecurity, operating systems, databases</span>.<br><br>
+                I have worked with<br>
+                <span id="js-rotating3">C++, Python, Flutter, NoSQL, Javascript, jQuery, HTML/CSS, Git</span>.<br><br>
             </h2>
+            <h3>
+                Get in touch
+            </h3>
+            <ul class="contact_list">
+                <li><a target="_blank" href="https://github.com/jakeump">
+                    <img src="images/github.svg" alt="Github logo">
+                </a></li>
+                <li><a target="_blank" href="mailto:blockjb@umich.edu">
+                    <img src="images/email.svg" alt="Email logo">
+                </a></li>
+                <li><a target="_blank" href="https://linkedin.com/in/block-jake">
+                    <img src="images/linkedin.svg" alt="Linkedin logo">
+                </a></li>
+            </ul>
         </main>
         <footer>
             <p>&copy; Jake Block - 2022, University of Michigan</p>
         </footer>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="bower_components/Morphext/dist/morphext.min.js"></script>
+        <script>
+            $("#js-rotating1, #js-rotating2, #js-rotating3").Morphext({
+                animation: "flipInX",
+                speed: 2000,
+                complete: function () {}
+            });
+        </script>
     </body>
 </html>

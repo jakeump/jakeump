@@ -1,13 +1,19 @@
+@font-face {
+    font-family: Aaargh;
+    src: url(../Aaargh.ttf) format('truetype');
+    /* should I find a .woff file? */
+}
+
 header{
     border-bottom: 2px solid white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: "Amatic SC", sans-serif;
-    font-size: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Aaargh, sans-serif;
+    font-size: 1.5em;
 }
 
 .nav_links{
@@ -36,7 +42,14 @@ header{
     text-decoration: underline;
 }
 
+/* this is needed as a fallback contrast, as we use a background image 
+    WAVE does not test for background image contrast */
+html{
+    background: black;
+}
+
 body{
+    background: black;
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -44,6 +57,7 @@ body{
 
 main{
     flex: 1;
+    padding-bottom: 50px;
 }
 
 footer{
@@ -55,22 +69,26 @@ footer{
     vertical-align: text-bottom;
 }
 
-h1{
-    font-family: "Amatic SC", sans-serif;
-    font-size: 4em;
+h1, h2, h3{
+    font-family: Aaargh, sans-serif;
     font-weight: 400;
     text-align: center;
     color: white;
+}
+
+h1{
+    font-size: 4em;
     line-height: 200%;
 }
 
 h2{
-    font-family: "Amatic SC", sans-serif;
     font-size: 2em;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-    line-height: 32px;
+    line-height: 40px;
+}
+
+h3{
+    font-size: 1.2em;
+    line-height: 50px;
 }
 
 a.skip{
@@ -89,5 +107,3 @@ a.skip:focus{
     color: black;
     text-decoration-style: solid;
 }
-
-/*prefers reduced motion for skip to main content -- is this needed?*/
