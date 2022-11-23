@@ -30,3 +30,13 @@ body{
 .dark-mode .gallery img{
     border: 3px solid white;
 }
+
+/* iPad styling */
+@media screen and (min-device-width: 481px) {
+
+}
+
+/* larger screens */
+@media screen and (min-device-width: 769px) {
+
+}

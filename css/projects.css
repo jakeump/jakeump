@@ -6,25 +6,24 @@ body{
     border: 2px solid black;
 }
 
-.timeline{
-    display: block;
-    width: 90%;
-    height: 500px;
-    margin: auto;
-    justify-self: center;
-}
-
 .blocklifts{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
     gap: 20px;
 }
 
 .blocklifts > img{
+    display: none;
     border: 3px solid black;
     width: 100%;
+}
+
+#myCarousel{
+    width: 50%;
+    justify-content: center;
+    margin: auto;
 }
 
 .item1{
@@ -34,20 +33,19 @@ body{
 
 .item1 img{
     padding-top: 20px;
-    width: 15%;
+    width: 35%;
 }
 
 .item2{
-    padding-top: 25px;
     grid-column: 1 / -1;
     text-align: center;
 }
 
 #slider{
     grid-column: 1 / -1;
-    width: 25%;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* probably wanna use grid here so I can have captions and such*/
@@ -96,4 +94,40 @@ body{
 
 .dark-mode .gallery img{
     border: 3px solid white;
+}
+
+
+/* iPad styling */
+@media screen and (min-device-width: 481px) {
+    #slider{
+        grid-column: 1 / -1;
+        width: 25%;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+    }
+
+    .blocklifts{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .blocklifts > img{
+        display: inline;
+    }
+
+    #myCarousel{
+        display: none;
+    }
+
+    .item1 img{
+        width: 15%;
+    }
+
+    .item2{
+        padding-top: 25px;
+    }
+}
+
+/* larger screens */
+@media screen and (min-device-width: 769px) {
+
 }

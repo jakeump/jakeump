@@ -5,9 +5,12 @@
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-bottom: 2px solid black;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: Aaargh, sans-serif;
     font-size: 1.5em;
 }
@@ -16,29 +19,13 @@ nav{
     text-align: center;
 }
 
-nav ul{
-    display: inline-block;
-    vertical-align: middle;
+.nav_links {
+    display: flex;
+    flex-direction: column;
 }
 
-.moon{
-    float: right;
-}
-
-#dark-mode-btn{
-    padding-right: 25px;
-}
-
-.nav_links{
-    padding-left: 45px;
-    justify-content: space-between;
-}
-
-.nav_home, .nav_about, .nav_projects{
-    display: inline;
-    padding-top: 4px;
-    padding-left: 5px;
-    padding-right: 5px;
+.nav_home, .nav_about, .nav_projects, .moon{
+    padding: 10px 5px 6px 5px;
 }
 
 .nav_home a, .nav_about a, .nav_projects a{
@@ -118,7 +105,6 @@ a.skip:focus{
 
 i.toggler{
     color: black;
-    float: right;
     font-size: 20px;
 }
 
@@ -147,4 +133,33 @@ i.toggler{
 .dark-mode .nav_projects a:link, .dark-mode .nav_home a:visited, 
 .dark-mode .nav_about a:visited, .dark-mode .nav_projects a:visited{
     color: white;
+}
+
+/* iPad styling */
+@media screen and (min-device-width: 481px) {
+    header{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .nav_links{
+        width: 100%;
+        flex-direction: row;
+        float: left;
+    }
+
+    .moon{
+        padding-right: 25px;
+    }
+}
+
+/* larger screens */
+@media screen and (min-device-width: 769px) {
+
 }
