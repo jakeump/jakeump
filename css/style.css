@@ -146,6 +146,7 @@ i.toggler{
         display: flex;
         flex-direction: row;
         width: 100%;
+        padding-left: 25px;
     }
     
     .nav_links{

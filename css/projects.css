@@ -21,7 +21,7 @@ body{
 }
 
 #myCarousel{
-    width: 50%;
+    width: 90%;
     justify-content: center;
     margin: auto;
 }
@@ -44,8 +44,7 @@ body{
 #slider{
     grid-column: 1 / -1;
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto;
 }
 
 /* probably wanna use grid here so I can have captions and such*/
@@ -100,10 +99,7 @@ body{
 /* iPad styling */
 @media screen and (min-device-width: 481px) {
     #slider{
-        grid-column: 1 / -1;
         width: 25%;
-        margin-left: 37.5%;
-        margin-right: 37.5%;
     }
 
     .blocklifts{
