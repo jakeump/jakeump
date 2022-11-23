@@ -1,32 +1,20 @@
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+const modeToggle = document.getElementById("dark-mode-btn");
+const darkModeClass = 'dark-mode';
+
+const toggleMode = () => {
+  setMode(document.body.classList.contains(darkModeClass));
 }
 
-var app = document.getElementsByTagName("BODY")[0];
-if (localStorage.lightMode == "dark") {
-    app.setAttribute("data-light-mode", "dark");
+const setMode = (mode) => {
+  localStorage.setItem('mode', mode ? 'light' : 'dark');
+  modeToggle.classList.toggle('fa-moon');
+  modeToggle.classList.toggle('fa-sun');
+  document.body.classList.toggle(darkModeClass, !mode);
 }
 
-function toggle_light_mode() {
-    var app = document.getElementsByTagName("BODY")[0];
-    if (localStorage.lightMode == "dark") 
-    {
-    localStorage.lightMode = "light";
-    app.setAttribute("data-light-mode", "light");
-    } 
-    else 
-    {
-    localStorage.lightMode = "dark";
-    app.setAttribute("data-light-mode", "dark");
-    }
-    console.log("lightMode = " + localStorage.lightMode);
-}
+modeToggle.addEventListener('click', toggleMode);
 
-document.getElementById('dark-mode-btn').addEventListener('click', function (e) {
-    const toggler = document.body;
-    toggler.classList.toggle('dark-mode');
-    const target = e.target;
-    target.classList.toggle('fa-moon');
-    target.classList.toggle('fa-sun');
-});
+// default mode is dark. if mode is null, set to dark
+(() => localStorage.getItem('mode') === null && localStorage.setItem('mode', 'dark'))();
+// fetches stored mode, allows mode to remain on refresh
+(() => localStorage.getItem('mode') === 'dark' && setMode(false))();
