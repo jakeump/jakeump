@@ -1,9 +1,9 @@
 body{
-    background: url("../images/starry.jpeg") 0 0 / 175vmax 175vmax;
+    background: white;
 }
 
 .nav_projects{
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 .timeline{
@@ -23,7 +23,7 @@ body{
 }
 
 .blocklifts > img{
-    border: 3px solid white;
+    border: 3px solid black;
     width: 100%;
 }
 
@@ -46,8 +46,8 @@ body{
 #slider{
     grid-column: 1 / -1;
     width: 25%;
-    padding-left: 37.5%;
-    padding-right: 37.5%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
 }
 
 /* probably wanna use grid here so I can have captions and such*/
@@ -63,11 +63,37 @@ body{
 }
 
 .gallery img{
-    border: 3px solid white;
+    border: 3px solid black;
     width: 22.5%;
 }
 
 .gallery img:first-child{
     border: none;
     align-self: center;
+}
+
+.dark-mode{
+    background-color: black;
+    background: black;
+}
+
+.dark-mode .nav_projects{
+    border: 2px solid black;
+}
+
+.dark-mode{
+    background-color: black;
+    background: url("../images/starry.jpeg") 0 0 / 175vmax 175vmax, black;
+}
+
+.dark-mode .nav_projects{
+    border: 2px solid white;
+}
+
+.dark-mode .blocklifts > img{
+    border: 3px solid white;
+}
+
+.dark-mode .gallery img{
+    border: 3px solid white;
 }
