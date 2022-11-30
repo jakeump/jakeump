@@ -47,26 +47,29 @@ body{
     margin: auto;
 }
 
-/* probably wanna use grid here so I can have captions and such*/
 .gallery{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-top: 25px;
+}
+
+.gallery, .solarImages, .chessImages{
+    display: grid;
+    grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
+    gap: 15px;
 }
 
 .gallery img{
     border: 3px solid black;
-    width: 22.5%;
+    width: 100%;
 }
 
-.gallery img:first-child{
-    border: none;
-    align-self: center;
+h2{
+    padding-top: 5px;
+}
+
+h3{
+    line-height: 30px;
 }
 
 .dark-mode{
@@ -95,9 +98,65 @@ body{
     border: 3px solid white;
 }
 
-
 /* iPad styling */
-@media screen and (min-device-width: 481px) {
+@media screen and (min-device-width: 600px) {
+    .blocklifts{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item1 img{
+        width: 20%;
+    }
+
+    #slider{
+        grid-column: 1;
+        align-self: center;
+    }
+
+    #myCarousel{
+        grid-column: 2;
+    }
+
+    .gallery{
+        padding-top: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .solar{
+        grid-column: 1 / -1;
+    }
+
+    .solarImages{
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / -1;
+        align-self: center;
+        align-items: center;
+    }
+
+    .chess{
+        padding-top: 15px;
+        grid-column: 1 / -1;
+    }
+
+    .chessImages{
+        grid-column: 1 / -1;
+        width: 50%;
+    }
+
+    h3{
+        line-height: 60px;
+        font-size: 2.6em;
+    }
+
+    h4{
+        line-height: 40px;
+        font-size: 1.4em;
+        padding-top: 10px;
+    }
+}
+
+/* larger screens */
+@media screen and (min-device-width: 900px) {
     #slider{
         width: 25%;
     }
@@ -110,6 +169,10 @@ body{
         display: inline;
     }
 
+    #slider{
+        grid-column: 1 / -1;
+    }
+
     #myCarousel{
         display: none;
     }
@@ -119,11 +182,42 @@ body{
     }
 
     .item2{
-        padding-top: 25px;
+        padding-top: 15px;
     }
-}
 
-/* larger screens */
-@media screen and (min-device-width: 769px) {
+    .gallery{
+        row-gap: 50px;
+    }
 
+    .solar{
+        grid-column: 1;
+        align-self: center;
+    }
+
+    .solarImages{
+        grid-template-columns: 1fr 1fr;
+        grid-column: 2;
+    }
+
+    .chess{
+        grid-column: 1;
+        align-self: center;
+        padding-top: 0;
+    }
+
+    .chessImages{
+        width: 100%;
+        grid-column: 2;
+    }
+
+    h3{
+        line-height: 60px;
+        font-size: 3.5em;
+    }
+
+    h4{
+        line-height: 40px;
+        font-size: 1.8em;
+        padding-top: 10px;
+    }
 }
