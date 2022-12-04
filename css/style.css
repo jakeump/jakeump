@@ -1,7 +1,6 @@
 @font-face {
     font-family: Aaargh;
     src: url(../Aaargh.ttf) format('truetype');
-    /* should I find a .woff file? */
 }
 
 header{
@@ -135,7 +134,7 @@ i.toggler{
     color: white;
 }
 
-/* iPad styling */
+/* header styling for iPad and larger */
 @media screen and (min-device-width: 481px) {
     header{
         flex-direction: row;
@@ -160,7 +159,9 @@ i.toggler{
     }
 }
 
-/* larger screens */
-@media screen and (min-device-width: 769px) {
-
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0s !important;
+    }
 }
