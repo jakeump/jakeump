@@ -33,15 +33,3 @@ body{
 .dark-mode .github, .dark-mode .linkedin, .dark-mode .email{
     filter: brightness(100%);
 }
-
-/*prefers reduced motion turn off animation*/
-
-/* iPad styling */
-@media screen and (min-device-width: 481px) {
-
-}
-
-/* larger screens */
-@media screen and (min-device-width: 769px) {
-
-}

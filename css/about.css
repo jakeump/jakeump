@@ -30,6 +30,7 @@ p{
     color: black;
     font-size: 1.5em;
     text-align: center;
+    line-height: normal;
 }
 
 footer p{
@@ -74,6 +75,7 @@ footer p{
     gap: 15px;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 .other{
@@ -119,10 +121,6 @@ footer p{
     .gallery .sportsImg, .gallery .otherImg{
         max-width: 40%;
     }
-
-    .gallery img{
-        max-width: 100%;
-    }
 }
 
 /* larger screens */
@@ -131,20 +129,8 @@ footer p{
         max-width: 30%;
     }
 
-    .gallery img{
-        max-width: 100%;
-    }
-
-    .otherImg{
-        max-width: 40%;
-    }
-
-    .other img{
-        max-width: 100%;
-    }
-
     h4{
-        max-width: 70%;
+        max-width: 80%;
         margin: auto;
     }
 
