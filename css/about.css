@@ -32,6 +32,10 @@ p{
     text-align: center;
 }
 
+footer p{
+    font-size: initial;
+}
+
 .gallery h2 {
     padding-top: 0;
     padding-bottom: 20px;
