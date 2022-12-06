@@ -6,11 +6,30 @@ body{
     border: 2px solid black;
 }
 
-h2{
-    justify-content: center;
-    max-width: 90%;
+.aboutBlurb{
+    width: 90%;
     margin: auto;
+}
+
+h1{
+    line-height: normal;
+}
+
+h2{
+    text-align: center;
     padding-top: 20px;
+}
+
+h4{
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+p{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .gallery h2 {
@@ -34,9 +53,13 @@ h2{
     align-items: center;
 }
 
-.gallery img{
-    box-sizing: border-box;
+.gallery .sportsImg, .gallery .otherImg{
     max-width: 90%;
+    box-sizing: border-box;
+}
+
+.gallery img{
+    max-width: 100%;
     border: 3px solid black;
 }
 
@@ -70,6 +93,10 @@ h2{
     border: 3px solid white;
 }
 
+.dark-mode p{
+    color: white;
+}
+
 /* iPad styling */
 @media screen and (min-device-width: 481px) {
     .sports{
@@ -81,27 +108,40 @@ h2{
         flex-direction: row;
     }
 
-    .other img:last-child{
+    .otherImg:last-child{
         max-width: 60%;
     }
 
-    .gallery img{
+    .gallery .sportsImg, .gallery .otherImg{
         max-width: 40%;
+    }
+
+    .gallery img{
+        max-width: 100%;
     }
 }
 
 /* larger screens */
 @media screen and (min-device-width: 769px) {
-    .gallery img{
+    .gallery .sportsImg{
         max-width: 30%;
     }
 
-    .other img{
+    .gallery img{
+        max-width: 100%;
+    }
+
+    .otherImg{
         max-width: 40%;
     }
 
-    h2{
+    .other img{
+        max-width: 100%;
+    }
+
+    h4{
         max-width: 70%;
+        margin: auto;
     }
 
     .sports{

@@ -41,10 +41,14 @@ body{
     text-align: center;
 }
 
-#slider{
+.start-finish{
     grid-column: 1 / -1;
     width: 90%;
     margin: auto;
+}
+
+#slider{
+   margin: auto;
 }
 
 .gallery{
@@ -116,7 +120,7 @@ h4{
         width: 20%;
     }
 
-    #slider{
+    .start-finish{
         grid-column: 1;
         align-self: center;
     }
@@ -176,7 +180,7 @@ h4{
         display: inline;
     }
 
-    #slider{
+    .start-finish{
         grid-column: 1 / -1;
     }
 
