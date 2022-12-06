@@ -111,7 +111,7 @@ h4{
 }
 
 /* iPad styling */
-@media screen and (min-device-width: 481px) {
+@media screen and (min-width: 481px) {
     .blocklifts{
         grid-template-columns: 1fr 1fr;
     }
@@ -167,7 +167,7 @@ h4{
 }
 
 /* larger screens */
-@media screen and (min-device-width: 769px) {
+@media screen and (min-width: 769px) {
     #slider{
         width: 25%;
     }

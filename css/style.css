@@ -91,7 +91,6 @@ a.skip{
     padding: 6px;
     position: absolute;
     top: -40px;
-    -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
 }
@@ -135,7 +134,7 @@ i.toggler{
 }
 
 /* header styling for iPad and larger */
-@media screen and (min-device-width: 481px) {
+@media screen and (min-width: 481px) {
     header{
         flex-direction: row;
         flex-wrap: nowrap;

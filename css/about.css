@@ -100,7 +100,7 @@ footer p{
 }
 
 /* iPad styling */
-@media screen and (min-device-width: 481px) {
+@media screen and (min-width: 481px) {
     .sports{
         flex-direction: row;
         align-items: flex-start;
@@ -120,7 +120,7 @@ footer p{
 }
 
 /* larger screens */
-@media screen and (min-device-width: 769px) {
+@media screen and (min-width: 769px) {
     .gallery .sportsImg{
         max-width: 30%;
     }
