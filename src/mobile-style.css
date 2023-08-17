@@ -1,0 +1,120 @@
+@media only screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+    font-size: 1.4em;
+  }
+
+  header .nav-item {
+    padding: 0.5em;
+  }
+
+  header .nav-link {
+    font-size: 1em;
+  }
+
+  header .nav-link:hover {
+    transform: rotate(0deg);
+  }
+
+  header .row {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  header .row .col-md-7 h1 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  header .row .col-md-7 h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 1.3em;
+  }
+
+  .header-ctr {
+    display: block;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .header-text h2 {
+    font-size: 28px;
+  }
+
+  header .btn {
+    border-radius: 30px;
+    margin-top: 0em;
+    font-weight: bold;
+  }
+
+  .section-1 .screen .content-sec {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    background: var(--bggradient);
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: justify;
+    transform: none !important;
+  }
+
+  .section-1 .screen:nth-child(1) {
+    display: none
+  }
+
+  .section-1 .screen:nth-child(2) {
+    background: url(../assets/train.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .section-1 .screen:nth-child(3) {
+    display: none
+  }
+
+  .section-2 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .section-2 .row .col-md-6 .my-pic img {
+    margin-bottom: 3em;
+    margin-top: 1em;
+  }
+
+  .cards {
+    margin: 40px 0;
+  }
+
+  .section-3 .card {
+    margin: 1em 0.5em;
+    width: 20rem;
+  }
+
+  .section-3 .container h1 {
+    font-size: 1.7em;
+  }
+
+  .quote {
+    text-align: center;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+  }
+
+  footer .row .col-md-2 {
+    margin-top: 5vmin;
+  }
+
+  footer {
+    padding: 10vmin 12vmin 5vmin 12vmin;
+  }
+
+  .sticky {
+    position: absolute;
+  }
+}
